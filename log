@@ -1669,3 +1669,17 @@ sudoku.c:119:15: error: expected expression before ‘}’ token
       |               ^
 Compilation failed
 1b40fec
+Thu 05 Oct 2023 09:46:48 PM UTC: 
+ sudoku.c | 3 ++-
+ 1 file changed, 2 insertions(+), 1 deletion(-)
+In file included from test.c:5:
+sudoku.c: In function ‘DFS’:
+sudoku.c:113:9: error: ‘s’ undeclared (first use in this function)
+  113 |   push( s , initial);
+      |         ^
+sudoku.c:113:9: note: each undeclared identifier is reported only once for each function it appears in
+sudoku.c:120:9: error: expected expression before ‘}’ token
+  120 |         }
+      |         ^
+Compilation failed
+444cb7d
