@@ -549,3 +549,9 @@ sudoku.c:101:23: error: control reaches end of non-void function [-Werror=return
 cc1: all warnings being treated as errors
 Compilation failed
 3a2ad45
+Thu 05 Oct 2023 09:31:27 PM UTC: 
+ sudoku.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+ tests:  6|2
+total_score: 45/70
+238bbc9
