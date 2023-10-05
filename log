@@ -1559,3 +1559,28 @@ test.c:263: error: control reaches end of non-void function [-Werror=return-type
 cc1: all warnings being treated as errors
 Compilation failed
 e64aa65
+Thu 05 Oct 2023 09:42:37 PM UTC: 
+ sudoku.c | 5 ++---
+ 1 file changed, 2 insertions(+), 3 deletions(-)
+In file included from test.c:5:
+sudoku.c: In function ‘DFS’:
+sudoku.c:113:9: error: passing argument 1 of ‘push’ from incompatible pointer type [-Werror=incompatible-pointer-types]
+  113 |   push( initial);
+      |         ^~~~~~~
+      |         |
+      |         Node *
+In file included from test.c:4:
+list.h:33:18: note: expected ‘Stack *’ {aka ‘List *’} but argument is of type ‘Node *’
+   33 | void push(Stack* s, void* data);
+      |           ~~~~~~~^
+In file included from test.c:5:
+sudoku.c:113:3: error: too few arguments to function ‘push’
+  113 |   push( initial);
+      |   ^~~~
+In file included from test.c:4:
+list.h:33:6: note: declared here
+   33 | void push(Stack* s, void* data);
+      |      ^~~~
+cc1: all warnings being treated as errors
+Compilation failed
+0df2d3d
