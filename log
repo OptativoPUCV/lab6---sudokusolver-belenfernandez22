@@ -1614,3 +1614,17 @@ sudoku.c:119:15: error: expected ‘;’ before ‘}’ token
 cc1: all warnings being treated as errors
 Compilation failed
 8860183
+Thu 05 Oct 2023 09:44:02 PM UTC: 
+ sudoku.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:5:
+sudoku.c: In function ‘DFS’:
+sudoku.c:113:9: error: expected expression before ‘,’ token
+  113 |   push( , initial);
+      |         ^
+sudoku.c:119:15: error: expected ‘;’ before ‘}’ token
+  119 |       return n }
+      |               ^~
+      |               ;
+Compilation failed
+41e2351
