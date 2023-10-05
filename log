@@ -1775,3 +1775,15 @@ sudoku.c:119:15: error: ‘N’ undeclared (first use in this function)
 sudoku.c:119:15: note: each undeclared identifier is reported only once for each function it appears in
 Compilation failed
 96df00c
+Thu 05 Oct 2023 09:52:10 PM UTC: 
+ sudoku.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:5:
+sudoku.c: In function ‘DFS’:
+sudoku.c:119:15: error: ‘Nn’ undeclared (first use in this function); did you mean ‘n’?
+  119 |       return  Nn;  }
+      |               ^~
+      |               n
+sudoku.c:119:15: note: each undeclared identifier is reported only once for each function it appears in
+Compilation failed
+636e108
