@@ -1584,3 +1584,33 @@ list.h:33:6: note: declared here
 cc1: all warnings being treated as errors
 Compilation failed
 0df2d3d
+Thu 05 Oct 2023 09:43:39 PM UTC: 
+ sudoku.c | 25 +++++++------------------
+ 1 file changed, 7 insertions(+), 18 deletions(-)
+In file included from test.c:5:
+sudoku.c: In function ‘DFS’:
+sudoku.c:113:9: error: passing argument 1 of ‘push’ from incompatible pointer type [-Werror=incompatible-pointer-types]
+  113 |   push( initial);
+      |         ^~~~~~~
+      |         |
+      |         Node *
+In file included from test.c:4:
+list.h:33:18: note: expected ‘Stack *’ {aka ‘List *’} but argument is of type ‘Node *’
+   33 | void push(Stack* s, void* data);
+      |           ~~~~~~~^
+In file included from test.c:5:
+sudoku.c:113:3: error: too few arguments to function ‘push’
+  113 |   push( initial);
+      |   ^~~~
+In file included from test.c:4:
+list.h:33:6: note: declared here
+   33 | void push(Stack* s, void* data);
+      |      ^~~~
+In file included from test.c:5:
+sudoku.c:119:15: error: expected ‘;’ before ‘}’ token
+  119 |       return n}
+      |               ^
+      |               ;
+cc1: all warnings being treated as errors
+Compilation failed
+8860183
