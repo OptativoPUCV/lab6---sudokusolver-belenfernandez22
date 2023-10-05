@@ -1750,3 +1750,17 @@ test.c:7:8: error: ‘_strdup’ defined but not used [-Werror=unused-function]
 cc1: all warnings being treated as errors
 Compilation failed
 898af2d
+Thu 05 Oct 2023 09:51:47 PM UTC: 
+ sudoku.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:5:
+sudoku.c: In function ‘DFS’:
+sudoku.c:119:7: error: ‘return’ with no value, in function returning non-void [-Werror=return-type]
+  119 |       return  ;  }
+      |       ^~~~~~
+sudoku.c:111:7: note: declared here
+  111 | Node* DFS(Node* initial, int* cont){
+      |       ^~~
+cc1: all warnings being treated as errors
+Compilation failed
+22b3364
