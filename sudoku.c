@@ -123,8 +123,7 @@ Node* DFS(Node* initial, int* cont){
       push(S, aux);
       aux = next(lista);}
     free(n);}
-  return NULL;
-}
+  return NULL;}
 
 /*
 int main( int argc, char *argv[] ){
