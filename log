@@ -470,3 +470,65 @@ Thu 05 Oct 2023 09:30:57 PM UTC:
  tests:  6|2
 total_score: 45/70
 2f73469
+Thu 05 Oct 2023 09:31:13 PM UTC: 
+ sudoku.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:5:
+sudoku.c: In function ‘is_final’:
+sudoku.c:102:5: error: expected declaration specifiers before ‘return’
+  102 |     return 0;
+      |     ^~~~~~
+sudoku.c:103:1: error: expected declaration specifiers before ‘}’ token
+  103 | }
+      | ^
+sudoku.c:105:36: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘{’ token
+  105 | Node* DFS(Node* initial, int* cont){
+      |                                    ^
+test.c:7:34: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘{’ token
+    7 | char * _strdup(const char * str) {
+      |                                  ^
+test.c:14:1: error: parameter ‘test_id’ is initialized
+   14 | int test_id = -1;
+      | ^~~
+test.c:17:14: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘{’ token
+   17 | int success(){
+      |              ^
+test.c:22:24: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘{’ token
+   22 | void err_msg(char* msg){
+      |                        ^
+test.c:29:23: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘{’ token
+   29 | void ok_msg(char* msg){
+      |                       ^
+test.c:35:25: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘{’ token
+   35 | void info_msg(char* msg){
+      |                         ^
+test.c:40:75: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘{’ token
+   40 | int test_suite(int(*test)(), char* msg, int max_score, int id, int req_id){
+      |                                                                           ^
+test.c:57:16: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘{’ token
+   57 | int adj_test1(){
+      |                ^
+test.c:106:19: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘{’ token
+  106 | int test_isvalid(){
+      |                   ^
+test.c:150:19: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘{’ token
+  150 | int test_mod_adj(){
+      |                   ^
+test.c:176:19: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘{’ token
+  176 | int test_isfinal(){
+      |                   ^
+test.c:201:15: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘{’ token
+  201 | int test_dfs(){
+      |               ^
+test.c:245:36: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘{’ token
+  245 | int main( int argc, char *argv[] ) {
+      |                                    ^
+In file included from test.c:5:
+sudoku.c:101:5: error: old-style parameter declarations in prototyped function definition
+  101 | int is_final(Node* n)
+      |     ^~~~~~~~
+test.c:263: error: expected ‘{’ at end of input
+test.c:263: error: control reaches end of non-void function [-Werror=return-type]
+cc1: all warnings being treated as errors
+Compilation failed
+f11f278
