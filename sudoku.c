@@ -46,7 +46,7 @@ void print_node(Node* n){
 int is_valid(Node* n){
   int fila[9][9] = {0};
   int colu[9][9] = {0};
-  int miniSudo[9][9] = {0}
+  int miniSudo[9][9] = {0};
   int num;
 
     return 1;
