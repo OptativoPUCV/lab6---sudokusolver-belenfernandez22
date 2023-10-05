@@ -170,3 +170,40 @@ test.c:263: error: control reaches end of non-void function [-Werror=return-type
 cc1: all warnings being treated as errors
 Compilation failed
 f8ea12e
+Thu 05 Oct 2023 09:25:19 PM UTC: 
+ sudoku.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:5:
+sudoku.c:22:13: error: initializer element is not constant
+   22 |   Node* n = createNode();
+      |             ^~~~~~~~~~
+sudoku.c:23:23: error: ‘file_name’ undeclared here (not in a function)
+   23 |   FILE* file = fopen (file_name, "r");
+      |                       ^~~~~~~~~
+sudoku.c:25:3: error: expected identifier or ‘(’ before ‘for’
+   25 |   for(i=0;i<9;i++){
+      |   ^~~
+sudoku.c:25:12: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘<’ token
+   25 |   for(i=0;i<9;i++){
+      |            ^
+sudoku.c:25:16: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘++’ token
+   25 |   for(i=0;i<9;i++){
+      |                ^~
+sudoku.c:32:3: error: data definition has no type or storage class [-Werror]
+   32 |   fclose (file);
+      |   ^~~~~~
+sudoku.c:32:3: error: type defaults to ‘int’ in declaration of ‘fclose’ [-Werror=implicit-int]
+sudoku.c:32:3: error: parameter names (without types) in function declaration [-Werror]
+sudoku.c:33:3: error: expected identifier or ‘(’ before ‘return’
+   33 |   return n;
+      |   ^~~~~~
+sudoku.c:34:1: error: expected identifier or ‘(’ before ‘}’ token
+   34 | }
+      | ^
+sudoku.c: In function ‘read_file’:
+sudoku.c:21:35: error: control reaches end of non-void function [-Werror=return-type]
+   21 | Node* read_file (char* file_name){}
+      |                                   ^
+cc1: all warnings being treated as errors
+Compilation failed
+3127cc6
