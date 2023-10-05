@@ -251,3 +251,16 @@ Thu 05 Oct 2023 09:25:57 PM UTC:
  tests:  3|4
 total_score: 20/70
 2d7e3d1
+Thu 05 Oct 2023 09:27:27 PM UTC: 
+ sudoku.c | 23 +++++++++++++++++++++++
+ 1 file changed, 23 insertions(+)
+In file included from test.c:5:
+sudoku.c: In function ‘get_adj_nodes’:
+sudoku.c:99:11: error: redefinition of ‘list’
+   99 |     List* list=createList();
+      |           ^~~~
+sudoku.c:76:10: note: previous definition of ‘list’ with type ‘List *’
+   76 |    List *list = createList();
+      |          ^~~~
+Compilation failed
+e849ee8
