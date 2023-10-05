@@ -941,3 +941,27 @@ test.c:7:8: error: ‘_strdup’ defined but not used [-Werror=unused-function]
 cc1: all warnings being treated as errors
 Compilation failed
 66b3c42
+Thu 05 Oct 2023 09:34:29 PM UTC: 
+ sudoku.c | 4 ++--
+ 1 file changed, 2 insertions(+), 2 deletions(-)
+In file included from test.c:5:
+sudoku.c: In function ‘is_final’:
+sudoku.c:107:10: error: suggest parentheses around assignment used as truth value [-Werror=parentheses]
+  107 |       if(n->sudo[i][k] = 0) return 0;
+      |          ^
+test.c:245:5: error: ‘main’ is normally a non-static function [-Werror=main]
+  245 | int main( int argc, char *argv[] ) {
+      |     ^~~~
+test.c:262:1: error: expected declaration or statement at end of input
+  262 | }
+      | ^
+At top level:
+test.c:245:5: error: ‘main’ defined but not used [-Werror=unused-function]
+  245 | int main( int argc, char *argv[] ) {
+      |     ^~~~
+test.c:7:8: error: ‘_strdup’ defined but not used [-Werror=unused-function]
+    7 | char * _strdup(const char * str) {
+      |        ^~~~~~~
+cc1: all warnings being treated as errors
+Compilation failed
+8d52e10
