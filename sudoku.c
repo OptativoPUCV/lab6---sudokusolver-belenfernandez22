@@ -104,7 +104,7 @@ int is_final(Node*n){
       if(n->sudo[i][k] == 0) 
         return 1;
        } }
-  return 1; }
+  return 0; }
 
 Node* DFS(Node* initial, int* cont){
   return NULL;
