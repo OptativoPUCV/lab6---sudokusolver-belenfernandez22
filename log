@@ -834,3 +834,43 @@ test.c:7:8: error: ‘_strdup’ defined but not used [-Werror=unused-function]
 cc1: all warnings being treated as errors
 Compilation failed
 b9b4861
+Thu 05 Oct 2023 09:34:01 PM UTC: 
+ sudoku.c | 4 ++--
+ 1 file changed, 2 insertions(+), 2 deletions(-)
+In file included from test.c:5:
+sudoku.c: In function ‘is_final’:
+sudoku.c:103:3: error: this ‘for’ clause does not guard... [-Werror=misleading-indentation]
+  103 |   for(int i= 0; i < 9; i++);
+      |   ^~~
+sudoku.c:104:3: note: ...this statement, but the latter is misleadingly indented as if it were guarded by the ‘for’
+  104 |   {
+      |   ^
+sudoku.c:105:5: error: this ‘for’ clause does not guard... [-Werror=misleading-indentation]
+  105 |     for(int k = 0; k < 9; k++);
+      |     ^~~
+sudoku.c:106:5: note: ...this statement, but the latter is misleadingly indented as if it were guarded by the ‘for’
+  106 |     {
+      |     ^
+sudoku.c:107:18: error: ‘i’ undeclared (first use in this function)
+  107 |       if(n->sudo[i][k] == 0) return 0;
+      |                  ^
+sudoku.c:107:18: note: each undeclared identifier is reported only once for each function it appears in
+sudoku.c:107:21: error: ‘k’ undeclared (first use in this function)
+  107 |       if(n->sudo[i][k] == 0) return 0;
+      |                     ^
+test.c:245:5: error: ‘main’ is normally a non-static function [-Werror=main]
+  245 | int main( int argc, char *argv[] ) {
+      |     ^~~~
+test.c:262:1: error: expected declaration or statement at end of input
+  262 | }
+      | ^
+At top level:
+test.c:245:5: error: ‘main’ defined but not used [-Werror=unused-function]
+  245 | int main( int argc, char *argv[] ) {
+      |     ^~~~
+test.c:7:8: error: ‘_strdup’ defined but not used [-Werror=unused-function]
+    7 | char * _strdup(const char * str) {
+      |        ^~~~~~~
+cc1: all warnings being treated as errors
+Compilation failed
+e07ad0d
