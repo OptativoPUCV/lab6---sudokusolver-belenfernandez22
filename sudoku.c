@@ -100,7 +100,7 @@ List* get_adj_nodes(Node* n){
 
 int is_final(Node* n)
 {
-  f(int i = 0; i < 9; i++)
+  feof(int i = 0; i < 9; i++)
   {
     fo(int k = 0; k < 9; k++)
     {
