@@ -564,3 +564,8 @@ sudoku.c:7:8: error: flexible array member in a struct with no named members
       |        ^~~~
 Compilation failed
 8a57dbc
+Thu 05 Oct 2023 09:32:00 PM UTC: 
+ sudoku.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+ tests:  0|0
+8b3d14a
