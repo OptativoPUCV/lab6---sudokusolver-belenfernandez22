@@ -4,7 +4,7 @@
 
 
 typedef struct{
-   int sudo[9][9];
+   int sudo[][9];
 }Node;
 
 Node* createNode(){
