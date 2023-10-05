@@ -15,7 +15,7 @@ Node* createNode(){
 Node* copy(Node* n){
     Node* new=(Node*) malloc(sizeof(Node));
     *new = *n;
-    return new;
+    return new
 }
 
 Node* read_file (char* file_name){ 
