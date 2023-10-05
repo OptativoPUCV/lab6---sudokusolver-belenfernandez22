@@ -116,7 +116,7 @@ Node* DFS(Node* initial, int* cont){
     pop(S);
     (*cont)++;
     if(is_final(n)){
-      return  ;  }
+      return  N ;  }
     List *lista = get_adj_nodes(n);
     Node *aux = first(lista);
     while(aux){
