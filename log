@@ -1844,3 +1844,9 @@ test.c:263: error: control reaches end of non-void function [-Werror=return-type
 cc1: all warnings being treated as errors
 Compilation failed
 e7c53cf
+Thu 05 Oct 2023 10:09:43 PM UTC: 
+ sudoku.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+ tests:  10|0
+total_score: 70/70
+bf3deeb
