@@ -75,13 +75,13 @@ int is_valid(Node* n){
 List* get_adj_nodes(Node* n){
    List *list = createList();
 
-  for(int i = 0; i < 9; i++)
+  for(int i = 1; i < 9; i++)
   {
-    for(int k = 0; k < 9; k++)
+    for(int k = 1; k < 9; k++)
     {
       if(n->sudo[i][k] == 0)
       { 
-        for(int num = 0; num <= 9; num++)
+        for(int num = 1; num <= 9; num++)
         {
           Node *adjN = copy(n);
           adjN->sudo[i][k] = num;
