@@ -1693,3 +1693,32 @@ sudoku.c:120:9: error: expected expression before ‘}’ token
       |         ^
 Compilation failed
 7fbc9d2
+Thu 05 Oct 2023 09:47:08 PM UTC: 
+ sudoku.c | 1 -
+ 1 file changed, 1 deletion(-)
+In file included from test.c:5:
+sudoku.c: In function ‘DFS’:
+sudoku.c:120:5: error: expected expression before ‘List’
+  120 |     List *lista = get_adj_nodes(n);
+      |     ^~~~
+sudoku.c:121:23: error: ‘lista’ undeclared (first use in this function)
+  121 |     Node *aux = first(lista);
+      |                       ^~~~~
+sudoku.c:121:23: note: each undeclared identifier is reported only once for each function it appears in
+test.c:245:5: error: ‘main’ is normally a non-static function [-Werror=main]
+  245 | int main( int argc, char *argv[] ) {
+      |     ^~~~
+test.c:262:1: error: expected declaration or statement at end of input
+  262 | }
+      | ^
+test.c:263: error: control reaches end of non-void function [-Werror=return-type]
+At top level:
+test.c:245:5: error: ‘main’ defined but not used [-Werror=unused-function]
+  245 | int main( int argc, char *argv[] ) {
+      |     ^~~~
+test.c:7:8: error: ‘_strdup’ defined but not used [-Werror=unused-function]
+    7 | char * _strdup(const char * str) {
+      |        ^~~~~~~
+cc1: all warnings being treated as errors
+Compilation failed
+10cfc5c
