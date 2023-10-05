@@ -80,7 +80,7 @@ List* get_adj_nodes(Node* n){
     for(int k = 0; k < 9; k++)
     {
       if(n->sudo[i][k] == 0)
-      
+      { }
         for(int num = 0; num <= 9; num++)
         {
           Node *adjN = copy(n);
