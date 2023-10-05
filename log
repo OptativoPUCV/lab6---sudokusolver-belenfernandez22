@@ -2,3 +2,23 @@ Thu 05 Oct 2023 09:12:20 PM UTC:
  tests:  0|5
 total_score: 0/70
 e5da5ed
+Thu 05 Oct 2023 09:23:45 PM UTC: 
+ sudoku.c | 4 ++++
+ 1 file changed, 4 insertions(+)
+In file included from test.c:5:
+sudoku.c: In function ‘is_valid’:
+sudoku.c:52:5: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘return’
+   52 |     return 1;
+      |     ^~~~~~
+sudoku.c:49:7: error: unused variable ‘miniSudo’ [-Werror=unused-variable]
+   49 |   int miniSudo[9][9] = {0};
+      |       ^~~~~~~~
+sudoku.c:48:7: error: unused variable ‘colu’ [-Werror=unused-variable]
+   48 |   int colu[9][9] = {0};
+      |       ^~~~
+sudoku.c:47:7: error: unused variable ‘fila’ [-Werror=unused-variable]
+   47 |   int fila[9][9] = {0};
+      |       ^~~~
+cc1: all warnings being treated as errors
+Compilation failed
+de300cf
