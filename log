@@ -361,3 +361,16 @@ Thu 05 Oct 2023 09:28:44 PM UTC:
  tests:  3|4
 total_score: 20/70
 8df34bb
+Thu 05 Oct 2023 09:28:57 PM UTC: 
+ sudoku.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:5:
+sudoku.c: In function ‘get_adj_nodes’:
+sudoku.c:93:20: error: expected ‘;’ before ‘}’ token
+   93 |         return list
+      |                    ^
+      |                    ;
+   94 |       }
+      |       ~             
+Compilation failed
+a325f8c

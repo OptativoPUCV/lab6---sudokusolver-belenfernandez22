@@ -90,12 +90,12 @@ List* get_adj_nodes(Node* n){
             pushBack(list, adjN); 
           }
         }          
-        return list;
+        return list
       }
     }
   }
   return list;
-   }
+  }
 
 
 int is_final(Node* n){
