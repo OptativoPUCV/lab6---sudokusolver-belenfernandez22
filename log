@@ -532,3 +532,20 @@ test.c:263: error: control reaches end of non-void function [-Werror=return-type
 cc1: all warnings being treated as errors
 Compilation failed
 f11f278
+Thu 05 Oct 2023 09:31:19 PM UTC: 
+ sudoku.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:5:
+sudoku.c:102:5: error: expected identifier or ‘(’ before ‘return’
+  102 |     return 0;
+      |     ^~~~~~
+sudoku.c:103:1: error: expected identifier or ‘(’ before ‘}’ token
+  103 | }
+      | ^
+sudoku.c: In function ‘is_final’:
+sudoku.c:101:23: error: control reaches end of non-void function [-Werror=return-type]
+  101 | int is_final(Node* n){}
+      |                       ^
+cc1: all warnings being treated as errors
+Compilation failed
+3a2ad45
