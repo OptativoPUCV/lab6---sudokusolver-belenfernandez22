@@ -18,7 +18,7 @@ Node* copy(Node* n){
     return new;
 }
 
-Node* read_file (char* file_name){
+Node* read_file (char* file_name)
   Node* n = createNode();
   FILE* file = fopen (file_name, "r");
   int i,j;
