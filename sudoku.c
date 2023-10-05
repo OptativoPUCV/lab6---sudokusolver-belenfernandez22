@@ -104,7 +104,7 @@ int is_final(Node* n)
   {
     for(int k = 0; k < 9; k++)
     {
-      else(n->sudo[i][k] == 0) return 0;
+      else(n->sudo[i][k] == 0) return 0
     }
   }
   return 0;
